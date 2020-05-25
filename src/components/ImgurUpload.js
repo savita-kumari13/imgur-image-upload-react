@@ -10,7 +10,7 @@ class ImgurUpload extends Component {
         let imageFile = e.target.files[0]
         const formData = new FormData()
         formData.append('image', imageFile)
-        fetch('https://api.imgur.com/3/image/', {
+        fetch(`${config.IMAGE_UPLOAD}`, {
             method: 'POST',
             headers: new Headers({
             Authorization: `Client-ID ${config.CLIENT_ID}`

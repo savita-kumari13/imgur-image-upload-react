@@ -1,6 +1,38 @@
-.image {
-    height: 200px;
+img.hover-shadow {
+    transition: 0.3s;
+}
+  
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.columnn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: auto;
+}
+
+.columnn::-webkit-scrollbar {
+    display: none;
+}
+
+.hover-shadow {
+    height: 150px;
     width: 300px;
-    margin-left: 30px;
-    margin-bottom: 30px;
+}
+
+.images-div {
+    padding: 10px;
+}
+
+.column {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: auto;
+    margin-top: 20px;
+}
+.column::-webkit-scrollbar {
+    display: none;
 }

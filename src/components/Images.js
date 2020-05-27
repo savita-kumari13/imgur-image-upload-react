@@ -1,8 +1,10 @@
 import React from 'react'
 
-const Images = ({image}) => {
+const Images = ({image, index, openModal}) => {
     return (
-        <img src = {image.link} className = 'image' alt = 'selected imagur'/>
+        <div className = 'images-div'>
+            <img src = {image.link} className = 'hover-shadow cursor' alt = 'selected imagur' onClick = {() => openModal(index+1)}/>
+        </div>
     )
 }
 

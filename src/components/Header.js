@@ -2,11 +2,9 @@ import React from 'react'
 
 const Header = (props) => {
     return (
-        <div className="header">
-            <form>
-                <input type="file" multiple onChange={(e) => props.upload(e)}/>
-                    <p>Drag your files here or click in this area.</p>
-            </form>
+        <div className = 'header'>
+            <input type = 'file' id = 'file' className = 'input-file' multiple onChange={(e) => props.upload(e)}/>
+            <label htmlFor = 'file' className = 'upload'>Drag your files here or click in this area</label>
         </div>
     )
 }
